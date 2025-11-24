@@ -13,8 +13,6 @@ services:
         condition: service_healthy
       cache:
         condition: service_healthy
-    env_file:
-      - /home/alex/wger/config/prod.env
     volumes:
       - static:/home/wger/static
       - media:/home/wger/media
